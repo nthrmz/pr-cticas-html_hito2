@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Lv2 - Primer Formulario</title>
+</head>
+<body>
+    <h1>Formularios Lv2 - Primer Formulario</h1>
+
+    <form>
+        <fieldset>
+            <legend>Formulario Solo Lectura (readonly)</legend>
+
+            <label for="nombre-read">Nombre:</label>
+            <input type="text" id="nombre-read" value="Nathalie Ramirez" readonly><br><br>
+
+            <label for="email-read">Email:</label>
+            <input type="email" id="email-read" value="nathramz@example.com" readonly><br><br>
+
+            <label for="edad-read">Edad:</label>
+            <input type="number" id="edad-read" value="20" readonly><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetear">
+        </fieldset>
+    </form>
+<br>
+    <form>
+        <fieldset>
+            <legend>Formulario Deshabilitado (disabled)</legend>
+
+            <label for="nombre-disabled">Nombre:</label>
+            <input type="text" id="nombre-disabled" value="María López" disabled><br><br>
+
+            <label for="email-disabled">Email:</label>
+            <input type="email" id="email-disabled" value="marialopez@example.com" disabled><br><br>
+
+            <label for="edad-disabled">Edad:</label>
+            <input type="number" id="edad-disabled" value="25" disabled><br><br>
+
+            <input type="submit" value="Enviar" disabled>
+            <input type="reset" value="Resetear" disabled>
+        </fieldset>
+    </form>
+<br>
+    <form>
+        <fieldset>
+            <legend>Formulario con Placeholder (texto de ayuda)</legend>
+
+            <label for="nombre-placeholder">Nombre:</label>
+            <input type="text" id="nombre-placeholder" placeholder="Escribe tu nombre aquí"><br><br>
+
+            <label for="email-placeholder">Email:</label>
+            <input type="email" id="email-placeholder" placeholder="correo@ejemplo.com"><br><br>
+
+            <label for="edad-placeholder">Edad:</label>
+            <input type="number" id="edad-placeholder" placeholder="Ingresa tu edad"><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetear">
+        </fieldset>
+    </form>
+    <hr>
+    <a href="../HTML/enlaces/formulariosavanzados.html">Volver a Formularios Avanzados</a>
+</body>
+</html>

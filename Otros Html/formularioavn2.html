@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Avanzado 2</title>
+</head>
+<body>
+
+    <h2>Formulario Avanzado 2</h2>
+
+    <form>
+        <fieldset>
+            <legend>Selección Normal</legend>
+            <label for="opciones">Elige una banda coreana:</label>
+            <select id="opciones" name="opciones" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="op1">Bangtan</option>
+                <option value="op2">Stray Kids</option>
+                <option value="op3">Monsta X</option>
+            </select>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+<br>
+    <form>
+        <fieldset>
+            <legend>Selección en Grupo</legend>
+            <label for="grupo">Elige tus integrantes favoritos:</label>
+            <select id="grupo" name="grupo" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <optgroup label="Bangtan">
+                    <option value="ga1">Integrante BTS - Min Yoongi</option>
+                    <option value="ga2">Integrante BTS - Jung Hoseok</option>
+                </optgroup>
+                <optgroup label="Stray Kids">
+                    <option value="gb1">Integrante SKZ - BangChan</option>
+                    <option value="gb2">Integrante SKZ - Lee Know</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>Selección con Datalist</legend>
+            <label for="sugerencias">Escribe y selecciona una princesa:</label>
+            <input list="listaOpciones" id="sugerencias" name="sugerencias" required>
+            <datalist id="listaOpciones">
+                <option value="Mérida"></option>
+                <option value="Mulán"></option>
+                <option value="Pocahontas"></option>
+            </datalist>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+    <hr>
+    <a href="../HTML/enlaces/formulariosavanzados.html">Volver a Formularios Avanzados</a>
+
+</body>
+</html>
